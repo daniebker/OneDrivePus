@@ -35,6 +35,9 @@
     <Reference Include="Microsoft.Identity.Client, Version=1.1.0.0, Culture=neutral, PublicKeyToken=0a613f4dd989e8ae, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microsoft.Identity.Client.1.1.0-preview\lib\net45\Microsoft.Identity.Client.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -48,10 +51,15 @@
     <Compile Include="CachePersistance.cs" />
     <Compile Include="ClientApplication.cs" />
     <Compile Include="ClientFactory.cs" />
+    <Compile Include="Drive.cs" />
+    <Compile Include="DriveUser.cs" />
     <Compile Include="IClientApplication.cs" />
     <Compile Include="IClientFactory.cs" />
+    <Compile Include="IHttpHandler.cs" />
+    <Compile Include="OneDriveRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResponseValue.cs" />
     <Compile Include="TokenRetriever.cs" />
   </ItemGroup>
   <ItemGroup>
